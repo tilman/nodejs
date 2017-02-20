@@ -461,7 +461,7 @@ ContactAPI.prototype.getDealById = function getDealById(dealId, success, failure
 
 ContactAPI.prototype.getDealByContactId = function getDealByContactId(contactId, success, failure) {
     var options = this.getOptions();
-    options.path = '/dev/api/contacts/' + contactId + 'deals';
+    options.path = '/dev/api/contacts/' + contactId + '/deals';
 
     https.get(options, function (resp) {
         var body = "";
